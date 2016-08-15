@@ -22,9 +22,9 @@ filetype plugin indent on    " required
 
 
 " YouCompleteMe configurations
-"let g:ycm_confirm_extra_conf = 0
+let g:ycm_confirm_extra_conf = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_completion = 0 
 
 
 "Personal configurations
@@ -48,5 +48,18 @@ set incsearch       " Incremental search
 set hlsearch        " Highlight search
 map <F10> :nohlsearch<CR>   " Temporarily disable highlighting, reenabled for the next search
 
-nnoremap <F5> :buffers<CR>:buffer<Space>     " load buffers
-nnoremap <F4> :FufFile<CR>                   " vim FuzzyFinder 
+" load buffers
+nnoremap <F5> :buffers<CR>:buffer<Space>
+" vim FuzzyFinder
+nnoremap <F4> :FufFile <CR>
+" create blanck line whithout entering in the insert mode
+" Enter to create a blank line after and Shift + Enter to
+" create one before
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
+"Remove all trailing whitespace by pressing F6
+nnoremap <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+"highliht the characters after the 80
+"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"match OverLength /\%81v.\+/
