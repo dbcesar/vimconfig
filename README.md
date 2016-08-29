@@ -13,4 +13,9 @@ This uses vundle for bundle management. You need to install vundle manually firs
 
     :PluginInstall
 
+After this, it is need to install the youcompletem (ycm-core)
+
+First, make sure the 
 The .vimrc togehter wiht vundle will handle the plugins installation.
+
+
