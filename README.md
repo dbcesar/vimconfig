@@ -13,9 +13,15 @@ This uses vundle for bundle management. You need to install vundle manually firs
 
     :PluginInstall
 
-After this, it is need to install the youcompletem (ycm-core)
+After this, you just need to compile the youcompletme. First, make sure your python dependencies are installed:
 
-First, make sure the 
+`sudo apt-get install python-dev python3-dev`
+
+Then:
+
+```
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
+```
+
 The .vimrc togehter wiht vundle will handle the plugins installation.
-
-
