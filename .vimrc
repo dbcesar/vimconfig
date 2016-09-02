@@ -63,3 +63,16 @@ nnoremap <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 "highliht the characters after the 80
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "match OverLength /\%81v.\+/
+colorscheme lucius
+LuciusDark
+
+set number
+set cursorline
+hi CursorLine ctermbg=grey
+
+autocmd InsertEnter * set nocursorline
+autocmd InsertLeave * set cursorline
+
+syntax on
+filetype on
+au BufNewFile,BufRead *.orogen set filetype=ruby
