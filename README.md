@@ -8,7 +8,7 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 2. Write a single line on your ~/.vimrc
 ```
-source ~/.vim/.vimrc" > ~/.vimrc
+echo "source ~/.vim/.vimrc" > ~/.vimrc
 ```
 3. Inside `~/.vim`, download the .vimrc file
 ```
